@@ -1,0 +1,67 @@
+.section__pic-container {
+  transform: translateX(-20vw);
+  animation: slideFromLeft 1s forwards;
+}
+
+/* Slide in from right */
+.section__text {
+  transform: translateX(20vw);
+  animation: slideFromRight 1s forwards 0.5s;
+}
+
+/* Hover Effect - Slightly move to top-right */
+.section__pic-container:hover,
+.section__text:hover {
+  transform: translate(10px, -10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* open State - Rotating into X */
+.hamburger-icon.open div:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+.hamburger-icon.open div:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon.open div:nth-child(3) {
+  transform: translateY(-15px) rotate(-45deg);
+}
+/* Default state before animation */
+.section-container-tr {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When visible, animate in */
+.section-container-tr.trans {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pro:hover {
+  transform: translateY(-7px);
+}
+
+/* Keyframe Animations */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(10vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

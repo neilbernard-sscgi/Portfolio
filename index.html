@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="animation.css" />
+  </head>
+  <body>
+    <div class="fixed">
+      <nav id="desktop-nav" class="navbar">
+        <div class="logo">Neil Bernard</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <liss><a href="#projects">Projects</a></liss>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav" class="navbar">
+        <div class="logo">Neil Bernard</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="menu-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <div class="theme">
+        <img class="mode" src="./assets/moon.png" alt="theme" />
+      </div>
+    </div>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title emphasizes">Neil Bernard Supillo</h1>
+        <p class="section__text__p2">Traine at SSCGI</p>
+        <p class="profile-description">
+          I am a dedicated programmer trainee at SSCGI with a passion for web
+          development.I am continuously expanding my skills in coding,
+          problem-solving, and building dynamic web applications.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 resume-btn"
+            onclick="window.open('./')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://github.com/neilbernard-sscgi')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick=" window.open('https://github.com/neilbernard-sscgi')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section-container-tr">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container about-pic">
+          <img
+            src="./assets/profile.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h4>Experience</h4>
+              <p>
+                <span class="emphasize">1+ years</span> <br />Fullstack
+                Development
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h4>Education</h4>
+              <p>
+                Bachelors of Science<br />in
+                <span class="emphasize">Computer Engineering</span>
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p class="lorem">
+              I'm Neil Bernard Boy Supillo, I'm 22 years old from Concepcion
+              No.1, Sariaya, Quezon. I graduated Computer Engineering at Manuel
+              S. Enverga University Foundation Candelaria Inc.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="section-container-tr">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- frontend -->
+          <div class="skills details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/html.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>HTML</h4>
+                  <p class="exper">Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/css.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>CSS</h4>
+                  <p class="exper">Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/js.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h4>JavaScript</h4>
+                  <p class="inter">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/bootstrap.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Bootstrap</h4>
+                  <p class="basic">Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/react.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>React</h4>
+                  <p class="basic">Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- backend -->
+          <div class="skills details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/mongo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Node.js - Express.js</h4>
+                  <p class="inter">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/express.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Java</h4>
+                  <p class="inter">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/java.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Php</h4>
+                  <p class="exper">Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/express.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Laravel</h4>
+                  <p class="inter">Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- database -->
+          <div class="skills details-container">
+            <h2 class="experience-sub-title">Database</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>MongoDB</h4>
+                  <p class="inter">Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/mysql.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>MySql</h4>
+                  <p class="exper">Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project section -->
+    <section id="projects" class="section-container-tr">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers add-projects">
+          <div class="pro details-container color-container with">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/bookmanagement.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Book Management System
+            </h2>
+            <p class="project-des">
+              A website built using
+              <span class="emphasize">Laravel and MySql</span> stack that allows
+              users to manage books and make crus operations.
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="pro details-container color-container with">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/emojipedia.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Emojipedia</h2>
+            <p class="project-des">
+              A website built using <span class="emphasize">React.js</span> that
+              allows users to see and search for their favorite emojis.
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="">
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="pro details-container color-container with">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/pro1.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">One Piece Crew</h2>
+            <p class="project-des">See the one-piece crew bounty.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="pro details-container color-container with">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/omnifood.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Omni food</h2>
+            <p class="project-des">
+              A landing page for the Omnifood Company built using
+              <span class="emphasize">HTML and CSS</span>
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="pro details-container color-container with">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/corso.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Corso Training</h2>
+            <p class="project-des">
+              A landing page for the Corso Trainig Company built using
+              <span class="emphasize">HTML and CSS</span>
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="pro details-container color-container with">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/blog.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Blog Mastery</h2>
+            <p class="project-des">
+              A landing page for the Blog Mastery Company built using
+              <span class="emphasize">HTML and CSS</span>
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="">
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contant me-->
+
+    <section id="contact" class="section-container-tr">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:examplemail@gmail.com" class="emphasize"
+              >neilsupillo@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/neil-bernard-supillo-486330244/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <hr />
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Neil Bernard. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

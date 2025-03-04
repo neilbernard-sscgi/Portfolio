@@ -4,13 +4,16 @@
 
 :root {
   --primary-color: white;
-  --secondary-color: #121212;
-  --border: #121212;
-  --icon: #121212;
-  --font: #121212;
-  --hover: #121212;
-  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --secondary-color: grey;
+  --border: grey;
+  --icon: grey;
+  --font: grey;
+  --hover: grey;
+  --shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
   --color: #1ca222;
+  --bg: white;
+  --black: black;
+  --theme: black;
 }
 .dark-theme {
   --primary-color: #121212;
@@ -20,6 +23,8 @@
   --font: white;
   --hover: white;
   --shadow: rgba(70, 70, 75, 0.432) 0px 7px 29px 0px;
+  --bg: white;
+  --theme: white;
 }
 * {
   margin: 0;
@@ -33,7 +38,7 @@ hr {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--font);
 }
 body::-webkit-scrollbar {
   display: none;
@@ -47,13 +52,13 @@ h4 {
 }
 
 .basic {
-  color: rgb(223, 168, 97);
+  color: rgb(193, 99, 17);
 }
 .inter {
-  color: rgb(153, 143, 143);
+  color: rgba(151, 161, 39, 0.94);
 }
 .exper {
-  color: rgb(220, 192, 31);
+  color: rgb(61, 23, 200);
 }
 
 .emphasize {
@@ -61,7 +66,7 @@ h4 {
   font-weight: 500;
 }
 .lorem {
-  color: var(--secondary-color);
+  color: var(--font);
 }
 .mode {
   width: 1.1rem;
@@ -74,7 +79,7 @@ h4 {
   border-radius: 3rem;
   width: 1.6rem;
   height: 1.6rem;
-  background-color: var(--icon);
+  background-color: var(--theme);
   position: absolute;
   right: 0.7rem;
   top: 0.7rem;
@@ -123,7 +128,7 @@ nav {
 }
 
 a {
-  color: var(--secondary-color);
+  color: var(--font);
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -132,7 +137,7 @@ a:hover {
   color: var(--font);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: var(--border);
+  text-decoration-color: var(--font);
 }
 
 .logo {
@@ -148,6 +153,7 @@ a:hover {
   font-size: 2.6rem;
   text-align: center;
   line-height: 1.2;
+  color: var(--theme);
 }
 /* HAMBURGER MENU */
 
@@ -220,10 +226,8 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 .menu-links a:hover {
-  color: var(--font);
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: var(--border);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .menu-links li {
@@ -284,12 +288,12 @@ section {
 
 .section__text__p1 {
   text-align: center;
-  color: var(--secondary-color);
+  color: var(--font);
 }
 
 .section__text__p2 {
   font-size: 1.75rem;
-  color: var(--secondary-color);
+  color: var(--font);
 }
 
 #profile .title {
@@ -395,6 +399,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: black;
 }
 
 .about-pic {
@@ -410,13 +415,15 @@ section {
 .details-container {
   padding: 1rem;
   flex: 1;
-  background: var(--primary-color);
+  background: var(--bg);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
-
+.details-container h4 {
+  color: black;
+}
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -427,7 +434,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 /* EXPERIENCE SECTION */
@@ -442,7 +449,7 @@ section {
 }
 
 .experience-sub-title {
-  color: var(--font);
+  color: black;
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -504,7 +511,7 @@ article .icon {
 
 .project-title {
   margin: 0.3rem 0.4rem 0;
-  color: var(--font);
+  color: black;
 }
 
 .project-btn {
@@ -516,14 +523,15 @@ article .icon {
 
 .project-btn:hover {
   color: white;
-  border: rgb(255, 255, 255) 0.1rem solid;
-  background-color: #121212;
+  border: white 0.1rem solid;
+  background-color: grey;
 }
 
 .project-des {
   font-size: 0.9rem;
   margin: 0.1rem 0.4rem 0.5rem;
   text-align: center;
+  color: grey;
 }
 .stack {
   font-weight: 700;
@@ -593,9 +601,9 @@ footer p {
 /* Style the active class (and buttons on mouse-over) */
 .active,
 .btnp:hover {
-  background-color: black;
+  background-color: var(--font);
   color: white;
-  border: var(--hover) 0.1rem solid;
+  border: var(--font) 0.1rem solid;
 }
 
 /* certificate*/

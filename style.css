@@ -51,23 +51,11 @@ h4 {
   color: var(--font);
 }
 
-.basic {
-  color: rgb(193, 99, 17);
-}
-.inter {
-  color: rgba(151, 161, 39, 0.94);
-}
-.exper {
-  color: rgb(61, 23, 200);
-}
-
 .emphasize {
   color: var(--color);
   font-weight: 500;
 }
-.lorem {
-  color: var(--font);
-}
+/*----------------------------- Mode theme -------------------------------------*/
 .mode {
   width: 1.1rem;
   height: 1.1rem;
@@ -94,10 +82,14 @@ a,
 .btn {
   transition: all 300ms ease;
 }
-/* Initial hidden state */
-.section__pic-container,
-.section__text {
-  opacity: 0;
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+
+  margin: 0 7rem;
+  box-sizing: border-box;
+  min-height: fit-content;
 }
 
 /* NAV */
@@ -108,7 +100,7 @@ a,
   background-color: var(--primary-color);
 }
 
-/* DESKTOP NAV */
+/*----------------------------- Desktop nav -------------------------------------*/
 
 nav,
 .nav-links {
@@ -131,6 +123,7 @@ a {
   color: var(--font);
   text-decoration: none;
   text-decoration-color: white;
+  font-weight: 500;
 }
 
 a:hover {
@@ -155,7 +148,7 @@ a:hover {
   line-height: 1.2;
   color: var(--theme);
 }
-/* HAMBURGER MENU */
+/*----------------------------- Hamburger -------------------------------------*/
 
 #hamburger-nav {
   display: none;
@@ -185,7 +178,6 @@ a:hover {
   position: relative;
 }
 
-/* Hamburger Bars */
 .hamburger-icon div {
   width: 100%;
   height: 5px;
@@ -242,25 +234,16 @@ a:hover {
 .menu-links.open li {
   border-bottom: 2px solid var(--secondary-color);
 }
-/* SECTIONS */
-
-section {
-  padding-top: 4vh;
-
-  margin: 0 7rem;
-  box-sizing: border-box;
-  min-height: fit-content;
-}
 
 /* .section-container {
   display: flex;
 } */
 
-/* PROFILE SECTION */
+/*----------------------------- Profile sectins -------------------------------------*/
 
 .profile-description {
   padding: 0 2rem 1rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
 }
 #profile {
@@ -326,7 +309,7 @@ section {
   height: 2rem;
 }
 
-/* BUTTONS */
+/*----------------------------- Buttons -------------------------------------*/
 
 .btn-container {
   display: flex;
@@ -378,10 +361,17 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
+/*----------------------------- About section -------------------------------------*/
 
+.lorem {
+  color: var(--font);
+  font-weight: 500;
+}
 #about {
   scroll-margin-top: 5rem;
+}
+.about-pic {
+  border-radius: 20%;
 }
 .about-containers {
   gap: 1.4rem;
@@ -437,7 +427,7 @@ section {
   margin-left: 1rem;
 }
 
-/* EXPERIENCE SECTION */
+/*----------------------------- Experience section -------------------------------------*/
 .skills {
   max-width: 400px;
   box-shadow: var(--shadow);
@@ -482,7 +472,16 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
+.basic {
+  color: rgb(193, 99, 17);
+}
+.inter {
+  color: rgba(151, 161, 39, 0.94);
+}
+.exper {
+  color: rgb(61, 23, 200);
+}
+/*----------------------------- Project section -------------------------------------*/
 
 #projects {
   position: relative;
@@ -532,12 +531,13 @@ article .icon {
   margin: 0.1rem 0.4rem 0.5rem;
   text-align: center;
   color: grey;
+  font-weight: 500;
 }
 .stack {
   font-weight: 700;
   font-size: 0.9rem;
 }
-/* CONTACT */
+/*----------------------------- CONTACT -------------------------------------*/
 
 #contact {
   display: flex;
@@ -589,57 +589,4 @@ footer p {
   text-align: center;
   padding-bottom: 1rem;
   color: var(--secondary-color);
-}
-/*project nav bar */
-.btnp {
-  border-radius: 0.8rem;
-  padding: 0.5rem;
-  width: 8rem;
-  background-color: white;
-}
-
-/* Style the active class (and buttons on mouse-over) */
-.active,
-.btnp:hover {
-  background-color: var(--font);
-  color: white;
-  border: var(--font) 0.1rem solid;
-}
-
-/* certificate*/
-.cert {
-  padding: 4vh 0.5rem;
-  margin: 2rem auto;
-  box-sizing: border-box;
-  min-height: fit-content;
-  max-width: 800px;
-}
-.cert-img {
-  width: 100%;
-  height: 90%;
-}
-.cert-btn {
-  margin-top: 0.6rem;
-  padding: 0.5rem;
-  width: 4rem;
-  border-radius: 2rem;
-}
-
-.cert-container {
-  justify-content: left;
-}
-.cert-img-con {
-  margin: auto;
-  max-width: 600px;
-  box-shadow: var(--shadow);
-}
-#myDIV {
-  display: flex;
-  justify-content: center;
-  margin-top: 0.6rem;
-  gap: 0.4rem;
-}
-/* hide and show projects div */
-.hide {
-  display: none;
 }

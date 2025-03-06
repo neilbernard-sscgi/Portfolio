@@ -73,7 +73,7 @@ h4 {
   top: 0.7rem;
   cursor: pointer;
 }
-/* TRANSITION */
+
 .scrolled {
   box-shadow: 0 4px 10px var(--secondary-color); /* Only bottom shadow */
   border-bottom: none;
@@ -239,6 +239,58 @@ a:hover {
   display: flex;
 } */
 
+/*----------------------------- Buttons -------------------------------------*/
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+#profile .btn {
+  width: 10rem;
+}
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 0.7rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: var(--hover) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn-color-1:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.btn-color-2 {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.btn-color-2:hover {
+  border: var(--secondary-color) 1px solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
 /*----------------------------- Profile sectins -------------------------------------*/
 
 .profile-description {
@@ -307,58 +359,6 @@ a:hover {
 .icon {
   cursor: pointer;
   height: 2rem;
-}
-
-/*----------------------------- Buttons -------------------------------------*/
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-#profile .btn {
-  width: 10rem;
-}
-.btn {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 0.7rem;
-  width: 8rem;
-  border-radius: 2rem;
-}
-
-.btn-color-1,
-.btn-color-2 {
-  border: var(--hover) 0.1rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-}
-
-.btn-color-1:hover {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-}
-
-.btn-color-2 {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-}
-
-.btn-color-2:hover {
-  border: var(--secondary-color) 1px solid;
-}
-
-.btn-container {
-  gap: 1rem;
 }
 
 /*----------------------------- About section -------------------------------------*/
